@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "minify-popper.min.js",
+      "type": "shell",
+      "command": "uglifyjs files/popper.min.js --source-map \"filename='files/popper.min.js.map'\" -o \"files/popper.min.js\"",
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "minify-swiper.min.js",
+      "type": "shell",
+      "command": "uglifyjs files/swiper.min.js --source-map \"filename='files/swiper.min.js.map'\" -o \"files/swiper.min.js\"",
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "minify-all",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "minify-popper.min.js",
+        "minify-swiper.min.js"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
