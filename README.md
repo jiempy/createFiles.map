@@ -1,7 +1,7 @@
 # INTRUCCIONES DE USO en vsCode
 
 ## Verifica si tienes instalado uglify-js y clean-css-cli
-- Para instalar ejecutar "npm install -g clean-css-cli uglify-js"
+- Para instalar ejecutar "npm install -g clean-css-cli uglify-js" y "npm install -g uglify-js clean-css"
 
 ## Codigo a ejecutar para crear taks en .vscode los .map
 - Agregar al directorio files todos los .css y .js que deseas obtener los .min y/o los .map 
